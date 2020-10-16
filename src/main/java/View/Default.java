@@ -57,27 +57,43 @@ public class Default extends javax.swing.JFrame {
         pnlFondo.setBackground(new java.awt.Color(102, 102, 102));
         pnlFondo.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        lblTitulo.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
+        lblTitulo.setFont(new java.awt.Font("Arial Black", 1, 24)); // NOI18N
         lblTitulo.setForeground(new java.awt.Color(255, 255, 255));
         lblTitulo.setText("Calculo de IMC");
-        pnlFondo.add(lblTitulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 20, -1, -1));
+        pnlFondo.add(lblTitulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 10, -1, -1));
 
+        rbtnHombre.setBackground(new java.awt.Color(102, 102, 102));
+        rbtnHombre.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        rbtnHombre.setForeground(new java.awt.Color(255, 255, 255));
         rbtnHombre.setText("Hombre");
         pnlFondo.add(rbtnHombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 80, -1, -1));
 
+        rbtnMujer.setBackground(new java.awt.Color(102, 102, 102));
+        rbtnMujer.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        rbtnMujer.setForeground(new java.awt.Color(255, 255, 255));
         rbtnMujer.setText("Mujer");
         pnlFondo.add(rbtnMujer, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 80, -1, -1));
 
         pnlCalcular.setBackground(new java.awt.Color(102, 102, 102));
 
+        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Estatura:");
 
+        jLabel3.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Cm");
 
+        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Peso:");
 
+        lblKilogramos.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        lblKilogramos.setForeground(new java.awt.Color(255, 255, 255));
         lblKilogramos.setText("Kg");
 
+        btnCalcular.setBackground(new java.awt.Color(0, 0, 0));
+        btnCalcular.setForeground(new java.awt.Color(255, 255, 255));
         btnCalcular.setText("Calcular");
 
         javax.swing.GroupLayout pnlCalcularLayout = new javax.swing.GroupLayout(pnlCalcular);
@@ -131,23 +147,32 @@ public class Default extends javax.swing.JFrame {
 
         pnlResultado.setBackground(new java.awt.Color(102, 102, 102));
 
+        jLabel4.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Resultado:");
 
+        lblResultado.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        lblResultado.setForeground(new java.awt.Color(255, 255, 255));
+
+        jLabel5.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Concepto:");
+
+        lblConcepto.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
 
         javax.swing.GroupLayout pnlResultadoLayout = new javax.swing.GroupLayout(pnlResultado);
         pnlResultado.setLayout(pnlResultadoLayout);
         pnlResultadoLayout.setHorizontalGroup(
             pnlResultadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 570, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlResultadoLayout.createSequentialGroup()
+                .addContainerGap(256, Short.MAX_VALUE)
+                .addComponent(lblResultado, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(174, 174, 174))
             .addGroup(pnlResultadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(pnlResultadoLayout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
                     .addGroup(pnlResultadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(pnlResultadoLayout.createSequentialGroup()
-                            .addComponent(jLabel4)
-                            .addGap(28, 28, 28)
-                            .addComponent(lblResultado, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(jLabel4)
                         .addGroup(pnlResultadoLayout.createSequentialGroup()
                             .addComponent(jLabel5)
                             .addGap(30, 30, 30)
@@ -156,14 +181,15 @@ public class Default extends javax.swing.JFrame {
         );
         pnlResultadoLayout.setVerticalGroup(
             pnlResultadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 190, Short.MAX_VALUE)
+            .addGroup(pnlResultadoLayout.createSequentialGroup()
+                .addGap(41, 41, 41)
+                .addComponent(lblResultado, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(125, Short.MAX_VALUE))
             .addGroup(pnlResultadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(pnlResultadoLayout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
-                    .addGroup(pnlResultadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jLabel4)
-                        .addComponent(lblResultado, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGap(50, 50, 50)
+                    .addComponent(jLabel4)
+                    .addGap(55, 55, 55)
                     .addGroup(pnlResultadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addComponent(jLabel5)
                         .addComponent(lblConcepto, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -202,9 +228,9 @@ public class Default extends javax.swing.JFrame {
     private javax.swing.JLabel lblKilogramos;
     public javax.swing.JLabel lblResultado;
     private javax.swing.JLabel lblTitulo;
-    private javax.swing.JPanel pnlCalcular;
+    public javax.swing.JPanel pnlCalcular;
     private javax.swing.JPanel pnlFondo;
-    private javax.swing.JPanel pnlResultado;
+    public javax.swing.JPanel pnlResultado;
     public javax.swing.JRadioButton rbtnHombre;
     public javax.swing.JRadioButton rbtnMujer;
     public javax.swing.JTextField txtEstatura;

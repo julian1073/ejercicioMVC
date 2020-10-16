@@ -11,25 +11,24 @@ package Model;
  */
 public class Modelo {
     
-    
-    private int estatura;
-    private int peso;
+    private double estatura;
+    private double peso;
     private double resultado;
     private String concepto;
 
-    public int getEstatura() {
+    public double getEstatura() {
         return estatura;
     }
 
-    public void setEstatura(int estatura) {
+    public void setEstatura(double estatura) {
         this.estatura = estatura;
     }
 
-    public int getPeso() {
+    public double getPeso() {
         return peso;
     }
 
-    public void setPeso(int peso) {
+    public void setPeso(double peso) {
         this.peso = peso;
     }
 
@@ -51,6 +50,7 @@ public class Modelo {
     
     public double calcularImc(){
         
-        return peso/(Math.pow(estatura, 2));
+        estatura = estatura/100;
+        return peso/(Math.pow((estatura), 2));
     }
 }
