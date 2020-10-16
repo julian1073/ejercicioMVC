@@ -10,6 +10,8 @@ import javax.swing.ButtonGroup;
 /**
  *
  * @author Julian
+ * @version 1.0.0
+ * @since 16/10/2020
  */
 public class Default extends javax.swing.JFrame {
 
@@ -237,6 +239,7 @@ public class Default extends javax.swing.JFrame {
     public javax.swing.JTextField txtPeso;
     // End of variables declaration//GEN-END:variables
     
+    //Metodo que asocia los radiobotones en un grupo
     public void grupoRadioBotones(){
         
         ButtonGroup grupoRadioBotones = new ButtonGroup();
@@ -245,6 +248,7 @@ public class Default extends javax.swing.JFrame {
         grupoRadioBotones.add(rbtnHombre);
     }
 
+    //Método para ocultar los panesles de calcular y resultado
     private void ocultarPaneles() {
     
         pnlCalcular.setVisible(false);

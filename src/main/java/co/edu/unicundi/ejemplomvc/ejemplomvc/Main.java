@@ -12,16 +12,21 @@ import View.Default;
 /**
  *
  * @author Julian
+ * @version 1.0.0
+ * @since 16/10/2020
  */
 public class Main {
     
     public static void main(String[] args) {
         
+        //Creación de instancias
         Modelo model = new Modelo();
         Default view = new Default();
         DefaultController controller = new DefaultController(view, model);
         
+        //Iniciar controlador
         controller.iniciar();
+        //Mostrar la vista
         view.setVisible(true);
     }
 }
